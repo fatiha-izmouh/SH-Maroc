@@ -1,0 +1,54 @@
+/* Import Fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=Rubik&display=swap');
+
+/* -- Body -- */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
+
+/* -- root  -- */
+
+:root {
+    transition: all 0.5s ease-in-out;
+
+    /* 1 => --- Acceuil.blade.php --- */
+
+    /* --- general classes */
+
+    --general-title-bg: #126256;
+    --general-title-color: #126256;
+    --button-bg: #126256;
+    --button-bg-hover: #30aba1;
+
+    /* ---- Slider Part (acceuil/slider.css) */
+    --nav-btn-activos: #11A391;
+    --slider-bg: #11A391;
+    --slider-overlay-color: rgba(0, 0, 0, 0.418);
+
+    /* --- Realisation Part  */
+    --color-title-realisation: #07362f;
+    --border-bottom: #11A391;
+
+
+}
+
+/*----- .container-section  --- */
+
+.container-section {
+    margin: 5.66rem 0;
+}
+
+
+/* ------------- SLIDER RESPONSIVE PART -------------- */
+
+/* Sizes */

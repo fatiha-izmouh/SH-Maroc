@@ -1,0 +1,302 @@
+.body {
+    background-color: #f0f5f5;
+    margin-bottom: -150px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.containeo {
+    background-color: white;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.title {
+    background-color: #11A391;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    padding: 15px;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.logo_jea img {
+    width: 250px;
+    height: 250px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-check .form-check-input {
+    margin-right: 10px;
+}
+
+.form-group label,
+.form-group h6 {
+    font-weight: bold;
+}
+
+.form-check label {
+    font-weight: 400;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: 600;
+}
+
+input,
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #126256;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-group-inline {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.form-group-inline .form-group {
+    flex: 1 1 45%;
+}
+
+.button-group {
+    text-align: center;
+    margin-top: 30px;
+}
+
+button {
+    padding: 15px 100px;
+    background-color: #11A391;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #126256;
+    color: white;
+}
+
+.social-media {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-icons a {
+    color: #333;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.social-icons a:hover {
+    transform: scale(1.2);
+}
+
+.social-icons a:nth-child(1) {
+    color: #E1306C;
+}
+
+.social-icons a:nth-child(2) {
+    color: #25D366;
+}
+
+.social-icons a:nth-child(3) {
+    color: #3b5998;
+}
+
+.social-icons a:nth-child(4) {
+    color: #FF0000;
+}
+
+
+.video-embed {
+    position: relative;
+    width: 48%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 40%;
+    height: 0;
+    text-align: center;
+}
+
+.video-embed iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 65%;
+    border: none;
+}
+
+.social-media h3 {
+    font-size: 40px;
+}
+
+.cont {
+    display: flex;
+    justify-content: center;
+}
+
+.cont hr {
+    width: 50%;
+    margin: 30px 0;
+}
+
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="email"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+    box-shadow: 0 0 2px 1px #11A391;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+input[type="radio"] {
+    color: black;
+    box-shadow: 0 0 5px 2px rgb(206, 205, 205);
+}
+
+input[type="radio"]:checked {
+    background-color: #11A391;
+}
+
+input[type="checkbox"]:checked {
+    background-color: #11A391;
+}
+
+.toast-success {
+    background-color: #11A391 !important;
+}
+
+.toast-success .toast-message {
+    color: #ffffff !important;
+}
+
+.conditions a {
+    text-decoration: none;
+    color: #11A391 !important;
+
+}
+
+@media (max-width: 991px) {
+    .form-group-inline .form-group {
+        flex: 1 1 100%;
+    }
+
+    .logo_jea img {
+        width: 200px;
+        height: auto;
+    }
+
+    .title {
+        font-size: 24px;
+    }
+
+    .button-group button {
+        padding: 12px 60px;
+    }
+
+    .social-media h3 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 767px) {
+    .containeo {
+        padding: 20px;
+    }
+
+    .title {
+        font-size: 20px;
+        padding: 10px;
+    }
+
+    .form-group-inline {
+        flex-direction: column;
+    }
+
+    .form-group-inline .form-group {
+        flex: 1 1 100%;
+    }
+
+    .button-group button {
+        padding: 12px 30px;
+    }
+
+    .video-embed {
+        width: 100%;
+        padding-bottom: 56.25%;
+    }
+
+    .video-embed iframe {
+        height: 65%;
+    }
+
+    .social-icons a {
+        font-size: 24px;
+    }
+
+    .cont hr {
+        width: 100%;
+    }
+}
+
+@media (max-width: 540px) {
+    .video-embed {
+        width: 70%;
+        padding-bottom: 56.25%;
+    }
+
+    .video-embed iframe {
+        height: 65%;
+    }
+
+    .cont hr {
+        width: 70%;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 440px) {
+    .video-embed {
+        width: 70%;
+        padding-bottom: 69%;
+    }
+
+    .social-icons a {
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 380px) {
+    .video-embed {
+        width: 70%;
+        padding-bottom: 79%;
+    }
+
+    .social-icons a {
+        font-size: 17px;
+    }
+}

@@ -1,0 +1,100 @@
+body {
+    background-color: #f5f5f5;
+    font-family: 'Arial', sans-serif;
+}
+
+.title {
+    color: #00796b;
+    margin-top: 20px;
+    font-size: 40px;
+    padding-top: 60px;
+}
+
+.date {
+    color: #757575;
+    font-size: 20px;
+}
+
+.main-image img {
+    height: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.description h5 {
+    color: #00796b;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+.objectif h5 {
+    color: #00796b;
+    font-weight: bold;
+    font-size: 25px;
+    margin-left: 15px;
+}
+
+.objectif {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    padding-top: 16px;
+}
+
+.image {
+    flex: 1;
+    max-width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    transition: transform 0.3s;
+}
+
+.image img:hover {
+    transform: scale(1.05);
+}
+
+
+
+@media (min-width: 577px) and (max-width: 991px) {
+    .image {
+        flex: 1 1 70%;
+        max-width: 70%;
+    }
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0px 20px;
+    }
+
+    .title {
+        font-size: 1.5rem;
+    }
+
+    .date {
+        font-size: 1rem;
+    }
+
+    .image {
+        flex: 1 1 80%;
+        max-width: 80%;
+    }
+
+    .images {
+        gap: 15px;
+    }
+}

@@ -1,0 +1,186 @@
+/* All */
+
+/* ======================= DROPDOWN + ACTIVE PART ===================== */
+
+.dropdown-menu {
+    background-color: #e0eeeb;
+    min-width: 200px;
+}
+
+
+.dropdown-menu li {
+    text-align: center;
+}
+
+.dropdown-menu li:focus {
+    color: #126256be;
+}
+
+.activn {
+    font-weight: bold !important;
+    color: #126256be;
+}
+
+.navbar-section {
+    position: fixed;
+    z-index: 10000;
+    background-color: #e0eeeb;
+    width: 100%;
+    padding: 12px 50px;
+    top: 0px;
+    left: 0;
+    margin-bottom: 50px;
+}
+
+/* Logo */
+.navbar-section .logo {}
+
+.navbar-section .logo img {
+    width: 100px;
+
+}
+
+/* Links */
+.links {
+    display: flex;
+}
+
+.links li {
+    padding: 20px 15px;
+    list-style: none;
+}
+
+.links li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+/* menu-icon */
+
+.menu-icon {
+    display: none;
+    font-size: 35px;
+    cursor: pointer;
+    margin: 0 15px;
+}
+
+.menu-icon i {
+    color: #16af9c;
+}
+
+/* -- Animation SlideUp and slideDown  -- */
+
+@keyframes slideDown {
+    from {
+        max-height: 0;
+        opacity: 0;
+    }
+
+    to {
+        max-height: 500px;
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        max-height: 500px;
+        opacity: 1;
+    }
+
+    to {
+        max-height: 0;
+        opacity: 0;
+    }
+
+}
+
+
+
+
+
+
+/* ---  Responsive --- */
+/* Small devices */
+@media (max-width:1199.98px) and (max-width: 991.98px) {
+
+    /* Navbar */
+    .links {
+        position: absolute;
+        top: 97px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: #11A391;
+        z-index: 99999;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        transition: max-height 0.5s ease, opacity 0.5s ease;
+    }
+
+    .links li a {
+        color: white;
+    }
+
+
+    .menu-icon {
+        display: block;
+    }
+
+    .links.show {
+        max-height: 500px;
+        opacity: 1;
+    }
+
+    .dropdown-menu {
+        background-color: #16af9c;
+    }
+
+}
+
+
+
+.whatsapp-icon {
+    position: fixed;
+    bottom: 25px;
+    left: 20px;
+    background-color: #25D366;
+    color: white;
+    font-size: 36px;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    text-decoration: none;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+}
+
+.whatsapp-icon:hover {
+    background-color: #20b955;
+}
+
+
+#backToTop {
+    display: none;
+    color: white;
+    background-color: #126256;
+    border-radius: 50%;
+    padding: 10px 15px;
+    font-size: 18px;
+    box-shadow: 0 2px 5px #20b955;
+    position: fixed;
+    bottom: 30px;
+    right: 26px;
+    z-index: 99999;
+}
+
+#backToTop:hover {
+    background-color: #126256;
+    color: white;
+}

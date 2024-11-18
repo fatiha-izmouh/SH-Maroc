@@ -1,0 +1,16 @@
+#backToTop {
+    display: none;
+    color: black;
+    background-color: white;
+    border-radius: 50%;
+    font-size: 18px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    position: fixed;
+    bottom: 30px;
+    right: 26px;
+}
+
+#backToTop:hover {
+    background-color: #126256;
+    color: white;
+}

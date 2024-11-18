@@ -1,0 +1,113 @@
+/* global*/
+
+.footer-t {
+    color: #11A391;
+}
+
+.footer-t::after {
+    background-color: #11A391;
+    width: 20%;
+    margin: 5px 0;
+    height: 2px;
+    content: '';
+    display: block;
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+/* -- Footer Infos --- */
+
+.footer-infos .footer-title img {
+    width: 35%;
+    height: auto;
+}
+
+footer .footer-infos .footer-desc {
+    text-align: justify;
+}
+
+.footer-links li {
+    list-style: none;
+    margin: 19px 0;
+
+}
+
+.footer-links li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.2s all ease-in-out;
+}
+
+.footer-links li a#active {
+    color: #11A391;
+}
+
+.footer-links li a:hover {
+    color: #11A391;
+}
+
+.footer-contact-p {
+    line-height: 30px;
+}
+
+.phone-p i,
+.email-p i,
+.contact-p i,
+.phone-p strong,
+.email-p strong,
+.contact-p strong {
+    color: #11A391;
+}
+
+
+.footer-social-media a {
+    background: black;
+    padding: 12px 12px;
+    border-radius: 50%;
+    border: 1px solid rgb(174, 172, 172);
+    color: white;
+    text-decoration: none;
+    transition: background 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+}
+
+.footer-social-media a i {
+    font-size: 20px;
+}
+
+.footer-social-media a.instagram:hover {
+    background: #E1306C;
+    color: white;
+}
+
+.footer-social-media a.facebook:hover {
+    background: #1877F2;
+
+    color: white;
+}
+
+.footer-social-media a.whatsapp:hover {
+    background: #25D366;
+    color: white;
+}
+
+.footer-social-media a.youtube:hover {
+    background: #FF0000;
+    color: white;
+}
+
+.footer-social-media a.linkedin:hover {
+    background: #0A66C2;
+    color: white;
+}
+
+.footer-contact .copyright-div {
+    color: rgb(94, 213, 138);
+}
+
+.footer-contact .copyright-div a {
+    text-decoration: none;
+    color: rgb(94, 213, 138);
+}
